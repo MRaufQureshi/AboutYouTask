@@ -1,0 +1,18 @@
+## Ignore node_modules folder
+node_modules
+
+# User-specific stuff:
+.idea/checkstyle-idea.xml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+
+# deployment
+builds
+deploy
+logs
+*.log
+
+# npm lock file
+package-lock.json
