@@ -87,11 +87,17 @@ export const config: Options.Testrunner = {
         maxInstances: 5,
         //
         browserName: 'chrome',
-        acceptInsecureCerts: true
-        // If outputDir is provided WebdriverIO can capture driver session logs
-        // it is possible to configure which logTypes to include/exclude.
-        // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
-        // excludeDriverLogs: ['bugreport', 'server'],
+        // acceptInsecureCerts: true,
+        "goog:chromeOptions": {
+            mobileEmulation: {'deviceName': 'Nexus 5'},
+            args: [ '--no-sandbox',
+                '--disable-gpu',
+                //'--start-fullscreen',
+                '--disable-notifications',
+                //
+                '--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+            ]
+        }
     }],
     //
     // ===================
