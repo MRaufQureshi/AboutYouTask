@@ -13,6 +13,10 @@
 To install the dependencies you're gonna need to authenticate your npm client.
 
 The tests cases are coded in `Typescript` and project has following files and folders defined which should enable any QA/dev to start writing tests right away.
+- `Manual Test cases` - Consists of manual [Test cases](https://github.com/MRaufQureshi/AboutYouTask/blob/main/AboutYou%20Test%20cases.xlsx)
+
+Note: Column `Test Case Name` defines most of the business critical cases specific to product `SCAYLE` and some cases related to `AboutYou`  native app
+
 - `object` - Consists of `Base` class which has [wrappers](https://github.com/MRaufQureshi/AboutYouTask/tree/main/test/object/Base.ts) of webdriver
 - `api` - To maintain and write [api](https://github.com/MRaufQureshi/AboutYouTask/tree/main/test/src/api).
 - `data` - To set default [labels and titles](https://github.com/MRaufQureshi/Task/tree/main/test/src/data).
@@ -51,15 +55,6 @@ First, change the directory via: `$ cd path to the specs folder in this repo` an
 Optionally, Run `yarn` to ensure dependencies are installed.
 
 To start the test, run: `$ npm run wdio`
-
-**Optionally**, in `data.ts` file, adjust the configuration accordingly.
-
-**Example:**
-
-```sh
-    redirectURL:  'https://miro.com' ,
-    bearer:  ''
-```
 
 ## Test Assertions
 
