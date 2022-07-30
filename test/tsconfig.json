@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "module": "commonjs",
         "moduleResolution": "node",
         "types": [
             "node",
@@ -7,6 +8,7 @@
             "@wdio/jasmine-framework",
             "expect-webdriverio"
         ],
-        "target": "es2019"
+        "target": "es5",
+        "baseUrl": "."
     }
 }
