@@ -74,7 +74,6 @@ In the test cases you can use [expect-webdriverio](https://github.com/webdriveri
 - [ ] Verify "Basket" page using API to add product (WIP)
 
 ### Missing Test cases
-- Click 'Text' button from 'Panel' and then click in the canvas to create the 'Text' object
-- Click 'Square' shape button from 'Panel' and then click in the canvas to create the 'Square' object
+- Description in test cases defined in .xlxs file 
 
 
