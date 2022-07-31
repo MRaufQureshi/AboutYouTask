@@ -243,11 +243,4 @@ export class Base {
             }
         );
     }
-
-    public static async getSession(): Promise<string>{
-        const tmpToken = await browser.execute(() => localStorage.getItem('tadarida-session-v1'));
-        const xToken = JSON.stringify(tmpToken.substring(14,40));
-        console.log(xToken);
-        return xToken;
-    }
 }
