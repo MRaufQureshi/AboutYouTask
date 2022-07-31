@@ -1,12 +1,11 @@
 import {AboutYouNativeSelectors} from "../pageobjects/AboutYouNative";
 import {Base} from "../../object/Base";
+
+import {addProduct} from "../api/AddProductApi";
 import {HomePage} from "../pageobjects/NativeHomePage";
 import {SearchPage} from "../pageobjects/SearchPage";
-import {data} from "../data/data";
-import {addProduct} from "../api/AddProductApi";
-import getValue from "webdriverio/build/commands/element/getValue";
-import Tokens from "../data/Storage";
 import {ItemPage} from "../pageobjects/ItemPage";
+import {data} from "../data/data";
 
 describe('AboutYou Business Critical Path', () => {
     let searchTerm = 'Jeans';
@@ -18,7 +17,7 @@ describe('AboutYou Business Critical Path', () => {
         await Base.click(AboutYouNativeSelectors.GoToAppBanner.CancelButton);
     });
 
-   it('should verify Home Page UI', async () => {
+    it('should verify Home Page UI', async () => {
        console.log ('Checking Home Page UI - If all Button are displayed successfully');
         await expect(Base.select(HomePage.HeaderBanner.MenuButton)).toBeDisplayed();
         await expect(Base.select(HomePage.HeaderBanner.CompanyLogo)).toBeDisplayed();
@@ -54,15 +53,9 @@ describe('AboutYou Business Critical Path', () => {
     });
 
     it('should add "Product" to the Basket', async () => {
-        console.log ('Add Product to the shopping basket');
-        await Base.getSession();
+        console.log ('Add Product to the shopping basket'); /*using api*/
         await Base.open('/basket')
-        await addProduct(); /* Api implementation WIP */
-        await browser.pause(2000);
-
-        // await browser.refresh();
+        await addProduct();
+        await browser.refresh();
     });
-
 });
-
-
