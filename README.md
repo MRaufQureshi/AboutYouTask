@@ -1,7 +1,10 @@
 # AboutYouTask
 
 🔔 Notebell - Hi there, 
-It was recommend to timebox my challenge to 2-4 hours and if I take any shortcuts because of the limited time then I should just leave TODOs/ FIXMEs in the code. It is obvious that the code that I'm submitting is not timeboxed under 2-4 hours because I applied different approaches to implement test cases. I did ran into some troublshooting so I took more time. With all things considered I did try to implement basic user journey. Moreover I have added a `.xlxs` file in the repo which contains manual test cases as well. Not all test cases have been completely explained but please do pay attention to column `Test case Name` which represents critical features we need to consider while testing
+
+It was recommend to timebox my challenge to 2-4 hours and if I take any shortcuts because of the limited time then I should just leave TODOs/ FIXMEs in the code. It is obvious that the code that I'm submitting is not timeboxed under 2-4 hours because I applied different approaches to implement test cases. I did ran into some troublshooting so I took more time. 
+
+With all things considered I did try to implement basic user journey. Moreover I have added a `.xlxs` file in the repo which contains manual test cases as well. Not all test cases have been completely explained but please do pay attention to column `Test case Name` which represents critical features we need to consider while testing.
 
 
 ### Table of Contents
